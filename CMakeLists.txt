@@ -1,0 +1,5 @@
+cke_minimum_required(VERSION 2.8)
+project( arucoTest )
+find_package( OpenCV REQUIRED )
+add_executable( arucoTest aruco_test_board_gl.cpp )
+target_link_libraries( arucoTest ${OpenCV_LIBS} )
